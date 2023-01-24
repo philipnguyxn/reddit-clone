@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  corePlugins: {
+    preflight: false,
+  },
   content: ["./src/**/*.{html,js,jsx}"],
+  important: '#root',
   theme: {
     colors: {
-      'bg-primary': '#d9d9d9',
-      'bg-secondary': '#fff',
-      'bg-field': '#f6f7f8',
-      'bg-likes': '#edeff1',
+      'primary': '#d9d9d9',
+      'secondary': '#fff',
+      'field': '#f6f7f8',
+      'icons': "#000",
+      'likes-section': '#edeff1',
       'button-primary': '#ff4500',
     },
     fontFamily: {

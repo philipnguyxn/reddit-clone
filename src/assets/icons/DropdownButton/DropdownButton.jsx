@@ -5,8 +5,8 @@ import IconButton from "@mui/material/IconButton";
 // Icons
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const DropdownButton = () => (
-  <IconButton>
+const DropdownButton = ({ slotProps }) => (
+  <IconButton classes={slotProps}>
     <KeyboardArrowDownIcon />
   </IconButton>
 );

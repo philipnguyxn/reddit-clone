@@ -5,8 +5,8 @@ import IconButton from "@mui/material/IconButton";
 // Icons
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 
-const HomeButton = () => (
-  <IconButton>
+const HomeButton = ({ slotProps }) => (
+  <IconButton classes={slotProps}>
     <HomeRoundedIcon />
   </IconButton>
 );
