@@ -3,8 +3,6 @@ import React from "react";
 
 // Assets
 import { ReactComponent as Logo } from "../../assets/imgs/reddit-logo.svg";
-import HomeButton from "../../assets/icons/HomeButton/HomeButton";
-import DropdownButton from "../../assets/icons/DropdownButton/DropdownButton";
 
 const Header = () => {
   return (
@@ -17,11 +15,7 @@ const Header = () => {
         <Logo />
       </span>
       <div className="flex items-center flex-grow-1 flex-row">
-        <HomeButton slotProps={{
-          className: "bg-icons"
-        }}/>
         <div>Home</div>
-        <DropdownButton />
       </div>
     </header>
   );
