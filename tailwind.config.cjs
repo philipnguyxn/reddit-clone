@@ -22,11 +22,11 @@ module.exports = {
         's': '0.0625rem'
       },
       height: {
-        "header-buttons": "3.125rem",
+        "nav-buttons": "3.125rem",
         "buttons": "2rem",
       },
       width: {
-        "header-buttons": "3.125rem",
+        "nav-buttons": "3.125rem",
         "buttons": "2rem",
       }
     },
