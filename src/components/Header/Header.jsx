@@ -10,7 +10,7 @@ import NavDropdown from "./components/NavDropdown/NavDropdown";
 const Header = () => {
   return (
     <header
-      className="h-16 w-full px-3 py-0 sticky inline-flex items-center
+      className="h-16 w-full px-3 py-0 fixed inline-flex items-center
                 flex-grow-1 flex-row box-border bg-secondary border-b-1 
                 border-solid border-primary"
     >
