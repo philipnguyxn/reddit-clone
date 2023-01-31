@@ -21,13 +21,20 @@ module.exports = {
       borderRadius: {
         's': '0.0625rem'
       },
+      borderColor: {
+        'field-hover': "#3b82f6"
+      },
+      borderWidth: {
+        'field': '0.5px'
+      },
       height: {
-        "nav-buttons": "3.125rem",
+        "header-buttons": "3.125rem",
         "buttons": "2rem",
       },
       width: {
-        "nav-buttons": "3.125rem",
+        "header-buttons": "3.125rem",
         "buttons": "2rem",
+        "search-bar": "37.5rem",
       }
     },
   },

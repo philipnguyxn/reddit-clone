@@ -24,7 +24,7 @@ const NavDropdown = () => {
       role="menubar"
     >
       <div className="flex items-center font-bold ml-1.5 text-icons">
-        <span className="h-nav-buttons w-nav-buttons z-30">
+        <span className="h-header-buttons w-header-buttons z-30">
           {pathname === "/" ? <Home /> : <Add />}
         </span>
         <h4 className="ml-1.5">{pathname === "/" ? "Home" : "Create Post"}</h4>
@@ -53,7 +53,7 @@ const NavDropdown = () => {
             className="flex items-center w-full bg-transparent font-bold mx-1.5 no-underline 
                         text-icons float-none text-left"
           >
-            <span className="h-nav-buttons w-nav-button">
+            <span className="h-header-buttons w-header-buttons">
               {pathname !== "/" ? <Home /> : <Add />}
             </span>
             <h4 className="ml-1.5">
