@@ -2,10 +2,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-import { RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-// router
-import router from "./routes";
+// App
+import App from "./app/App";
 
 // Styles
 import "./index.css";
@@ -16,7 +16,9 @@ import store from "./app/store";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );

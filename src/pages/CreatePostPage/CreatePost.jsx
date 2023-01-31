@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+
+// Components
+import Header from "../../components/Header/Header";
 
 const CreatePost = () => {
   return (
-    <div>CreatePost</div>
-  )
-}
+    <>
+      <Header />
+      <div>CreatePost</div>
+    </>
+  );
+};
 
-export default CreatePost
+export default CreatePost;

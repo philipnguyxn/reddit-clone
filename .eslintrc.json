@@ -1,3 +1,22 @@
 {
-  "extends": ["react-app", "plugin:cypress/recommended"]
+  "extends": [
+    "reddit-clone",
+    "plugin:prettier/recommended",
+    "plugin:testing-library/react"
+  ],
+  "plugins": ["testing-library", "jest-dom"],
+  "rules": {
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debugging-utils": "warn",
+    "testing-library/no-dom-import": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ]
 }

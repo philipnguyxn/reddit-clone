@@ -13,6 +13,7 @@ const NavDropdown = () => {
   const { pathname } = useLocation();
 
   return (
+    // Menu Bar
     <div
       className={`relative w-64 flex items-center flex-grow-1 flex-row 
           ${
@@ -20,14 +21,13 @@ const NavDropdown = () => {
               ? "hover:border-1 hover:border-solid hover:border-primary hover:rounded"
               : "border-x-1 border-t-1 border-b-0 border-solid border-primary rounded-t"
           }`}
+      role="menubar"
     >
       <div className="flex items-center font-bold ml-1.5 text-icons">
         <span className="h-nav-buttons w-nav-buttons z-30">
           {pathname === "/" ? <Home /> : <Add />}
         </span>
-        <span className="ml-1.5">
-          {pathname === "/" ? "Home" : "Create Post"}
-        </span>
+        <h4 className="ml-1.5">{pathname === "/" ? "Home" : "Create Post"}</h4>
         <button
           className="absolute h-11 border-0 bg-secondary right-1.5
                     cursor-pointer border-none outline-none z-20"
@@ -36,8 +36,11 @@ const NavDropdown = () => {
           {!isClicked ? <ExpandMore /> : <ExpandLess />}
         </button>
       </div>
-      {/* Menu */}
-      <div className="absolute top-12 right-[1.2px] w-full z-10 menu">
+      <div
+        className="absolute top-12 right-[1.2px] w-full z-10 menu"
+        aria-hidden={`${!isClicked ? "true" : "false"}`}
+        role="menuitem"
+      >
         {/* Menu Content */}
         <div
           className={`w-full h-nav-dropdown absolute border-b-1 border-x-1  
@@ -53,9 +56,9 @@ const NavDropdown = () => {
             <span className="h-nav-buttons w-nav-button">
               {pathname !== "/" ? <Home /> : <Add />}
             </span>
-            <span className="ml-1.5">
+            <h4 className="ml-1.5">
               {pathname !== "/" ? "Home" : "Create Post"}
-            </span>
+            </h4>
           </NavLink>
         </div>
       </div>
