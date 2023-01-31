@@ -7,7 +7,7 @@ import { renderWithRouter } from "../../../../../tests/setup";
 // Components
 import NavDropdown from "./NavDropdown";
 
-describe("NavDropdown component rendering", () => {
+describe("NavDropdown component rendering/navigating between routes", () => {
   it("renders NavDropdown component", () => {
     renderWithRouter(<NavDropdown />);
 

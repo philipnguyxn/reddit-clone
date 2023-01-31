@@ -13,7 +13,7 @@ const NavDropdown = () => {
   const { pathname } = useLocation();
 
   return (
-    // Menu
+    // Menu Bar
     <div
       className={`relative w-64 flex items-center flex-grow-1 flex-row 
           ${
