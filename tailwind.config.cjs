@@ -13,6 +13,7 @@ module.exports = {
       'icons': "#000",
       'likes-section': '#edeff1',
       'button-primary': '#ff4500',
+      'black': '#000'
     },
     fontFamily: {
       sans: ['Roboto', "sans-serif"]
