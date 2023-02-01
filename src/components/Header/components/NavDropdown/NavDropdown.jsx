@@ -15,7 +15,7 @@ const NavDropdown = () => {
   return (
     // Menu Bar
     <div
-      className={`relative w-64 flex items-center flex-grow-1 flex-row 
+      className={`relative w-64 flex items-center flex-grow-1 flex-row mr-1.5
           ${
             !isClicked
               ? "hover:border-1 hover:border-solid hover:border-primary hover:rounded"
