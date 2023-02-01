@@ -7,6 +7,7 @@ import { ReactComponent as Logo } from "../../assets/imgs/redditLogo.svg";
 // Components
 import NavDropdown from "./components/NavDropdown/NavDropdown";
 import SearchBar from "./components/SearchBar/SearchBar";
+import UserSetting from "./components/UserSetting/UserSetting";
 
 const Header = () => {
   return (
@@ -20,6 +21,7 @@ const Header = () => {
       </span>
       <NavDropdown />
       <SearchBar />
+      <UserSetting />
     </header>
   );
 };
