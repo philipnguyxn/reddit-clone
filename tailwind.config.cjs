@@ -13,7 +13,8 @@ module.exports = {
       'icons': "#000",
       'likes-section': '#edeff1',
       'button-primary': '#ff4500',
-      'black': '#000'
+      'switch': '#ccc',
+      'switch-checked': '#2196F3'
     },
     fontFamily: {
       sans: ['Roboto', "sans-serif"]
@@ -23,7 +24,7 @@ module.exports = {
         's': '0.0625rem'
       },
       borderColor: {
-        'field-hover': "#3b82f6"
+        'field-hover': "#2196F3",
       },
       borderWidth: {
         'field': '0.5px'
@@ -31,12 +32,22 @@ module.exports = {
       height: {
         "header-buttons": "3.125rem",
         "buttons": "2rem",
+        'switch': '2.125rem',
+        'switch-knot': '1.625rem'
       },
       width: {
         "header-buttons": "3.125rem",
         "buttons": "2rem",
-        "search-bar": "37.5rem",
-      }
+        "search-bar": "55rem", 
+        'switch': '3.75rem',
+        'switch-knot': '1.625rem'
+      },
+      padding: {
+        'switch': '0.1875rem'
+      },
+      spacing: {
+        'swtich-knot': '1.625rem',
+      },
     },
   },
   plugins: [],
