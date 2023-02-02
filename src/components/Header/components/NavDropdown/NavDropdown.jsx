@@ -37,7 +37,7 @@ const NavDropdown = () => {
         </button>
       </div>
       <div
-        className="absolute top-12 right-[1.2px] w-full z-10 menu"
+        className="absolute top-12 right-[1.2px] w-full z-10"
         aria-hidden={`${!isClicked ? "true" : "false"}`}
         role="menuitem"
       >
