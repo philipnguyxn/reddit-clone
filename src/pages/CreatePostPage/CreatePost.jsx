@@ -1,16 +1,15 @@
-// Node Modules
 import React from "react";
 
-// Componets
+// Components
 import Header from "../../components/Header/Header";
 
-const HomePage = () => {
+const CreatePost = () => {
   return (
     <>
       <Header />
-      <main className="">Home Page</main>
+      <div>CreatePost</div>
     </>
   );
 };
 
-export default HomePage;
+export default CreatePost;

@@ -21,10 +21,14 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] Test B
 
 **Test Configuration**:
-* Firmware version:
-* Hardware:
-* Toolchain:
-* SDK:
+* Firmware version: 13.4.0
+* Hardware: React Testing Library
+* Firmware version: 5.16.5
+* Hardware: Jest DOM
+* Firmware version: 14.4.3
+* Hardware: User Event
+* Firmware version: 0.28.3
+* Hardware: Vitest
 
 # Checklist:
 
