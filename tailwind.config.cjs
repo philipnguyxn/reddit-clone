@@ -38,12 +38,14 @@ module.exports = {
       width: {
         "header-buttons": "3.125rem",
         "buttons": "2rem",
-        "search-bar": "55rem", 
+        "search-bar": "55rem",
         'switch': '3.75rem',
         'switch-knot': '1.625rem'
       },
       padding: {
-        'switch': '0.1875rem'
+        'switch': '0.1875rem',
+        'primary--x': '4.5rem',
+        'primary--t': '1.25rem',
       },
       spacing: {
         'swtich-knot': '1.625rem',
