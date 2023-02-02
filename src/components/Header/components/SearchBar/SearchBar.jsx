@@ -32,7 +32,7 @@ const SearchBar = () => {
         <input
           type="text"
           className={`w-full bg-field border-none focus:outline-none text-base 
-          text-primary ${searchTerm ? "text-black" : "text-primary"}`}
+          text-primary ${searchTerm && "text-black"}`}
           placeholder="Search Reddit"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}

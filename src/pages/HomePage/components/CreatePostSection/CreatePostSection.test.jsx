@@ -13,4 +13,11 @@ describe("CreatePostSection component rendering", () => {
 
     screen.debug();
   });
-})
+
+  it("display the section", () => {
+    renderWithRouter(<CreatePostSection />);
+
+    expect(screen.getByRole("img", { name: /user icon/i })).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/create post/i)).toBeInTheDocument();
+  });
+});
