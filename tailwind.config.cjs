@@ -14,7 +14,8 @@ module.exports = {
       'likes-section': '#edeff1',
       'button-primary': '#ff4500',
       'switch': '#ccc',
-      'switch-checked': '#2196F3'
+      'switch-checked': '#2196F3',
+      'black': '#000'
     },
     fontFamily: {
       sans: ['Roboto', "sans-serif"]
@@ -32,15 +33,18 @@ module.exports = {
       height: {
         "header-buttons": "3.125rem",
         "buttons": "2rem",
+        'field': '3.125rem',
         'switch': '2.125rem',
-        'switch-knot': '1.625rem'
+        'switch-knot': '1.625rem',
+        'create-post-section': '3.90625rem'
       },
       width: {
         "header-buttons": "3.125rem",
         "buttons": "2rem",
         "search-bar": "55rem",
         'switch': '3.75rem',
-        'switch-knot': '1.625rem'
+        'switch-knot': '1.625rem',
+        'field--home-page': '62rem'
       },
       padding: {
         'switch': '0.1875rem',
