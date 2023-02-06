@@ -44,15 +44,20 @@ module.exports = {
         "search-bar": "55rem",
         'switch': '3.75rem',
         'switch-knot': '1.625rem',
-        'field--home-page': '62rem'
+        'field--home-page': '62rem',
+        'likes-section': '4.6875rem'
       },
       padding: {
         'switch': '0.1875rem',
         'primary--x': '18rem',
         'primary--t': '1.25rem',
+        'likes-section': '1rem',
+        'post': '0.78125rem'
       },
       spacing: {
         'swtich-knot': '1.625rem',
+        'likes-section': '1.5625rem',
+        'content': '1.75rem'
       },
       borderWidth: {
         'divider': '0.5px'
