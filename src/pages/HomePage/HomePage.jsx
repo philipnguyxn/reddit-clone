@@ -13,7 +13,7 @@ const HomePage = () => {
       <Header />
       <main className="relative top-16 bg-primary w-full z-0">
         <div className="px-primary--x pt-primary--t">
-          <div className="grid grid-cols-4 grid-rows-2">
+          <div className="grid gap-5 grid-cols-4 grid-rows-2">
             <CreatePostSection />
             <CommunitySection />
             <PostSection />

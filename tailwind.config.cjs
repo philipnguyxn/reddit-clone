@@ -54,6 +54,9 @@ module.exports = {
       spacing: {
         'swtich-knot': '1.625rem',
       },
+      borderWidth: {
+        'divider': '0.5px'
+      }
     },
   },
   plugins: [],
