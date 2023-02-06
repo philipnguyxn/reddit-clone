@@ -6,7 +6,7 @@ import { ReactComponent as User } from "../../../../assets/icons/user.svg";
 
 const CreatePostSection = () => {
   return (
-    <div className="col-span-3 flex items-center bg-secondary rounded h-create-post-section">
+    <div className="flex items-center bg-secondary rounded h-create-post-section mb-5">
       <span className="mx-6">
         <User />
       </span>
@@ -19,6 +19,6 @@ const CreatePostSection = () => {
       />
     </div>
   );
-};        
+};
 
 export default CreatePostSection;
