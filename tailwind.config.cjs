@@ -48,7 +48,7 @@ module.exports = {
       },
       padding: {
         'switch': '0.1875rem',
-        'primary--x': '4.5rem',
+        'primary--x': '18rem',
         'primary--t': '1.25rem',
       },
       spacing: {
