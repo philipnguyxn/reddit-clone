@@ -2,20 +2,20 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../../../tests/setup";
+import { renderWithRouter } from "../../../tests/setup";
 
 // Components
-import CreatePostSection from "./CreatePostSection";
+import CreatePost from ".";
 
-describe("CreatePostSection component rendering", () => {
-  it("renders CreatePostSection component", () => {
-    renderWithRouter(<CreatePostSection />);
+describe("CreatePost component rendering", () => {
+  it("renders CreatePost component", () => {
+    renderWithRouter(<CreatePost />);
 
     screen.debug();
   });
 
   it("display the section", () => {
-    renderWithRouter(<CreatePostSection />);
+    renderWithRouter(<CreatePost />);
 
     expect(screen.getByRole("img", { name: /user icon/i })).toBeInTheDocument();
     expect(screen.getByPlaceholderText(/create post/i)).toBeInTheDocument();

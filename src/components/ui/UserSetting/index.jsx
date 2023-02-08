@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 
 // Icons
-import { ReactComponent as User } from "../../../../assets/icons/user.svg";
-import { ReactComponent as ExpandMore } from "../../../../assets/icons/expandMore.svg";
-import { ReactComponent as ExpandLess } from "../../../../assets/icons/expandLess.svg";
+import { ReactComponent as User } from "../../../assets/icons/user.svg";
+import { ReactComponent as ExpandMore } from "../../../assets/icons/expandMore.svg";
+import { ReactComponent as ExpandLess } from "../../../assets/icons/expandLess.svg";
 
 const UserSetting = () => {
   const [expandIsClicked, setExpandIsClicked] = useState(false);

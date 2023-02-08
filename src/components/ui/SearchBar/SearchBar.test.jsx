@@ -2,10 +2,10 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../../../tests/setup";
+import { renderWithRouter } from "../../../../tests/setup";
 
 // Components
-import SearchBar from "./SearchBar";
+import SearchBar from ".";
 
 describe("SearchBar component rendering/searching posts", () => {
   it("renders SearchBar component", () => {

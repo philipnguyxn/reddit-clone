@@ -3,12 +3,12 @@ import { NavLink, useLocation } from "react-router-dom";
 import React, { useState } from "react";
 
 // Assets
-import { ReactComponent as Home } from "../../../../assets/icons/home.svg";
-import { ReactComponent as ExpandMore } from "../../../../assets/icons/expandMore.svg";
-import { ReactComponent as ExpandLess } from "../../../../assets/icons/expandLess.svg";
-import { ReactComponent as Add } from "../../../../assets/icons/add.svg";
+import { ReactComponent as Home } from "../../../assets/icons/home.svg";
+import { ReactComponent as ExpandMore } from "../../../assets/icons/expandMore.svg";
+import { ReactComponent as ExpandLess } from "../../../assets/icons/expandLess.svg";
+import { ReactComponent as Add } from "../../../assets/icons/add.svg";
 
-const NavDropdown = () => {
+const MenuBar = () => {
   const [isClicked, setisClicked] = useState(false);
   const { pathname } = useLocation();
 
@@ -66,4 +66,4 @@ const NavDropdown = () => {
   );
 };
 
-export default NavDropdown;
+export default MenuBar;

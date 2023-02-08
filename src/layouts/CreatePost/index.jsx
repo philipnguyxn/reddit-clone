@@ -2,9 +2,9 @@
 import React from "react";
 
 // Icons
-import { ReactComponent as User } from "../../../../assets/icons/user.svg";
+import { ReactComponent as User } from "../../assets/icons/user.svg";
 
-const CreatePostSection = () => {
+const CreatePost = () => {
   return (
     <div className="flex items-center bg-secondary rounded h-create-post-section mb-5">
       <span className="mx-6">
@@ -21,4 +21,4 @@ const CreatePostSection = () => {
   );
 };
 
-export default CreatePostSection;
+export default CreatePost;

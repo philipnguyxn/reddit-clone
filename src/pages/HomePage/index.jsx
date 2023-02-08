@@ -2,10 +2,10 @@
 import React from "react";
 
 // Componets
-import Header from "../../components/Header/Header";
-import PostSection from "./components/PostSection/PostSection";
-import CreatePostSection from "./components/CreatePostSection/CreatePostSection";
-import CommunitySection from "./components/CommunitySection/CommunitySection";
+import Header from "../../layouts/Header";
+import Posts from "../../layouts/Posts";
+import CreatePost from "../../layouts/CreatePost";
+import Communities from "../../layouts/Communitites";
 
 const HomePage = () => {
   return (
@@ -14,11 +14,11 @@ const HomePage = () => {
       <main className="relative top-16 bg-primary w-full h-screen z-0">
         <div className="px-primary--x pt-primary--t grid grid-cols-4 gap-5">
           <div className="col-span-3">
-            <CreatePostSection />
-            <PostSection />
+            <CreatePost />
+            <Posts />
           </div>
           <div className="content-start	justify-start block bg-secondary rounded">
-            <CommunitySection />
+            <Communities />
           </div>
         </div>
       </main>

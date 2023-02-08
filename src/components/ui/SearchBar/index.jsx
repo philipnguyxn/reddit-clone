@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 
 // Icons
-import { ReactComponent as Search } from "../../../../assets/icons/search.svg";
-import { ReactComponent as Cancel } from "../../../../assets/icons/cancel.svg";
+import { ReactComponent as Search } from "../../../assets/icons/search.svg";
+import { ReactComponent as Cancel } from "../../../assets/icons/cancel.svg";
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");

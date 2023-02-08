@@ -2,23 +2,23 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../../../tests/setup";
+import { renderWithRouter } from "../../../tests/setup";
 
 // Components
-import CommunitySection from "./CommunitySection";
+import Communities from ".";
 
 // Data
-import communities from "../../../../data/communities";
+import communities from "../../data/communities";
 
-describe("CommunitySection component rendering", () => {
-  it("renders CommunitySection component", () => {
-    renderWithRouter(<CommunitySection />);
+describe("Communities component rendering", () => {
+  it("renders Communities component", () => {
+    renderWithRouter(<Communities />);
 
     screen.debug();
   });
 
   it("display the heading the community list", () => {
-    renderWithRouter(<CommunitySection />);
+    renderWithRouter(<Communities />);
 
     // Find the list of communities with the specific headings and avatars
     expect(

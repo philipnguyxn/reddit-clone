@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components
-import Header from "../../components/Header/Header";
+import Header from "../../layouts/Header";
 
 const CreatePost = () => {
   return (

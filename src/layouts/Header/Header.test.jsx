@@ -5,7 +5,7 @@ import { screen } from "@testing-library/react";
 import { renderWithRouter } from "../../../tests/setup";
 
 // Components
-import Header from "./Header";
+import Header from ".";
 
 describe("Header component rendering/navigating between routes", () => {
   it("renders Header component", () => {

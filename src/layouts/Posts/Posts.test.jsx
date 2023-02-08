@@ -5,12 +5,12 @@ import { screen } from "@testing-library/react";
 import { renderWithRouter } from "../../../tests/setup";
 
 // Components
-import HomePage from ".";
+import Posts from ".";
 
-describe("HomePage component rendering", () => {
-  it("renders HomePage component", () => {
-    renderWithRouter(<HomePage />);
+describe("Posts component rendering", () => {
+  it("renders Posts component", () => {
+    renderWithRouter(<Posts />);
 
     screen.debug();
   });
-});
+})

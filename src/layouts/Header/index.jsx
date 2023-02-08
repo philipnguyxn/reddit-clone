@@ -5,9 +5,9 @@ import React from "react";
 import { ReactComponent as Logo } from "../../assets/imgs/redditLogo.svg";
 
 // Components
-import NavDropdown from "./components/NavDropdown/NavDropdown";
-import SearchBar from "./components/SearchBar/SearchBar";
-import UserSetting from "./components/UserSetting/UserSetting";
+import MenuBar from "../../components/ui/MenuBar";
+import SearchBar from "../../components/ui/SearchBar";
+import UserSetting from "../../components/ui/UserSetting";
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
       <span className="mr-1.5">
         <Logo />
       </span>
-      <NavDropdown />
+      <MenuBar />
       <SearchBar />
       <UserSetting />
     </header>
