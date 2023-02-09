@@ -1,23 +1,28 @@
-// AllProviders.jsx
-// A React component that wraps around the Provider component from react-redux
+/**
+ * File for setting up wrapper components for rendering
+ */
 
 // Import React library
-import React from "react";
+import React, { Component } from "react";
 
-// Import Provider component from react-redux
+// Import `Provider` component from react-redux
 import { Provider } from "react-redux";
 
-// Import BrowserRouter component from react-router-dom
+// Import `BrowserRouter` component from react-redux
 import { BrowserRouter } from "react-router-dom";
 
-// Import the global store
-import store from "../../app/store";
+// Import the initial store from the app's store file
+import { store } from "../renders";
 
-// Define the AllProviders component
-const AllProviders = ({ children }) => (
-  <BrowserRouter>
-    <Provider store={store}>{children}</Provider>
-  </BrowserRouter>
+/**
+ * A React component that wraps around the Provider component from react-redux
+ * @param {Object} children - The inner components that will be rendered
+ * @returns {Component} The Provider component instance
+ */
+const Providers = ({ children }) => (
+  <Provider store={store}>
+    <BrowserRouter>{children}</BrowserRouter>
+  </Provider>
 );
 
-export default AllProviders;
+export default Providers;
