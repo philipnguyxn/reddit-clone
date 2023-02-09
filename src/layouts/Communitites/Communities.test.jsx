@@ -2,7 +2,7 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../tests/setup";
+import { renderWithAllProviders } from "../../utils/renders";
 
 // Components
 import Communities from ".";
@@ -12,13 +12,13 @@ import communities from "../../data/communities";
 
 describe("Communities component rendering", () => {
   it("renders Communities component", () => {
-    renderWithRouter(<Communities />);
+    renderWithAllProviders(<Communities />);
 
     screen.debug();
   });
 
   it("display the heading the community list", () => {
-    renderWithRouter(<Communities />);
+    renderWithAllProviders(<Communities />);
 
     // Find the list of communities with the specific headings and avatars
     expect(

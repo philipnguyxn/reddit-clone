@@ -2,20 +2,20 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../../tests/setup";
+import { renderWithAllProviders } from "../../../utils/renders";
 
 // Components
 import SearchBar from ".";
 
 describe("SearchBar component rendering/searching posts", () => {
   it("renders SearchBar component", () => {
-    renderWithRouter(<SearchBar />);
+    renderWithAllProviders(<SearchBar />);
 
     screen.debug();
   });
 
   it("display the search bar", () => {
-    renderWithRouter(<SearchBar />);
+    renderWithAllProviders(<SearchBar />);
 
     // Find the search bar form
     expect(screen.getByRole("search")).toBeInTheDocument();
@@ -28,9 +28,9 @@ describe("SearchBar component rendering/searching posts", () => {
     expect(
       screen.queryByRole("button", { name: /cancel icon/i })
     ).toBeNull();
-
-    /**
-     * TODO: Check the existence of the cancel button if the searchTerm is not empty
-     */
   });
+
+  it('display the user input value', () => {
+    
+  })
 });

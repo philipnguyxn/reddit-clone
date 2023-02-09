@@ -2,20 +2,20 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../../tests/setup";
+import { renderWithAllProviders } from "../../../utils/renders";
 
 // Components
 import UserSetting from ".";
 
 describe("UserSetting component rendering", () => {
   it("renders UserSetting component", () => {
-    renderWithRouter(<UserSetting />);
+    renderWithAllProviders(<UserSetting />);
 
     screen.debug();
   });
 
   it("display the menu bar", () => {
-    renderWithRouter(<UserSetting />);
+    renderWithAllProviders(<UserSetting />);
 
     // Find the menu bar
     expect(screen.getByRole("menubar")).toBeInTheDocument();
@@ -31,7 +31,7 @@ describe("UserSetting component rendering", () => {
   });
 
   it("display the menu item when the expand more icon is clicked", async () => {
-    const { user } = renderWithRouter(<UserSetting />);
+    const { user } = renderWithAllProviders(<UserSetting />);
 
     // Find the hidden menu item
     expect(screen.queryByRole("menuitem", { hidden: true }));

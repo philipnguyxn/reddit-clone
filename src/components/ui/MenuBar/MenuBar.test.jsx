@@ -2,20 +2,20 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../../tests/setup";
+import { renderWithAllProviders } from "../../../utils/renders";
 
 // Components
 import NavDropdown from ".";
 
 describe("NavDropdown component rendering/navigating between routes", () => {
   it("renders NavDropdown component", () => {
-    renderWithRouter(<NavDropdown />);
+    renderWithAllProviders(<NavDropdown />);
 
     screen.debug();
   });
 
   it("display the menu bar", () => {
-    renderWithRouter(<NavDropdown />);
+    renderWithAllProviders(<NavDropdown />);
 
     // Find the menu bar
     expect(screen.getByRole("menubar")).toBeInTheDocument();
@@ -31,7 +31,7 @@ describe("NavDropdown component rendering/navigating between routes", () => {
   });
 
   it("display the menu item when the expand more icon is clicked", async () => {
-    const { user } = renderWithRouter(<NavDropdown />);
+    const { user } = renderWithAllProviders(<NavDropdown />);
 
     // Find the hidden menu item
     expect(screen.queryByRole("menuitem", { hidden: true }));
@@ -58,7 +58,7 @@ describe("NavDropdown component rendering/navigating between routes", () => {
 
   it("should redirect to create post route when that heading is clicked", async () => {
     // User initilzation when the NavDropdown is rendered at the submit route
-    const { user } = renderWithRouter(<NavDropdown />, { route: "/submit" });
+    const { user } = renderWithAllProviders(<NavDropdown />, { route: "/submit" });
 
     // Wait for user to click the link in the menu item
     await user.click(screen.queryByRole("link"));
@@ -75,7 +75,7 @@ describe("NavDropdown component rendering/navigating between routes", () => {
 
   it("should redirect back to index route when that heading is clicked", async () => {
     // User initilzation when the NavDropdown is rendered at the index route
-    const { user } = renderWithRouter(<NavDropdown />);
+    const { user } = renderWithAllProviders(<NavDropdown />);
 
     // Wait for user to click the link in the menu item
     await user.click(screen.queryByRole("link"));
