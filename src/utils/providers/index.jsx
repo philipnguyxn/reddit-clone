@@ -12,7 +12,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 
 // Import the initial store from the app's store file
-import { store } from "../renders";
+import { store } from "../../app/store";
 
 /**
  * A React component that wraps around the Provider component from react-redux

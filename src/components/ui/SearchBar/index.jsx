@@ -1,5 +1,11 @@
-// SearchBar.jsx
-// A React component that implements a search bar
+/**
+ * @file SearchBar.js
+ * @author Khoi Nguyen - Phillip
+ * @license MIT
+ * @copyright Copyright (c) 2023 Khoi Nguyen
+ * @since 2023-02-08
+ * @description A search bar component for the Reddit search feature. Implements a search input field with a clear button that updates the search term in the global state.
+ */
 
 // Import React library
 import React from "react";
@@ -20,7 +26,11 @@ import { selectSearchTerm } from "../../../features/searchTerm/selectors";
 import { ReactComponent as Search } from "../../../assets/icons/search.svg";
 import { ReactComponent as Cancel } from "../../../assets/icons/cancel.svg";
 
-// Define the SearchBar component
+/**
+ * SearchBar component that implements a search input field with a clear button
+ * and updates the search term in the global state.
+ * @returns {JSX} The JSX for the search bar component.
+ */
 const SearchBar = () => {
   // Get the search term from the global state using the useSelector hook
   const searchTerm = useSelector(selectSearchTerm);
@@ -28,10 +38,10 @@ const SearchBar = () => {
   // Get the dispatch function for sending actions to the store using the useDispatch hook
   const dispatch = useDispatch();
 
-  // Handle the event when the user submits the form (presses enter or clicks the search icon)
-  const handleSubmit = () => {};
-
-  // Handle the event when the user changes the value of the search term
+  /**
+   * Handle the event when the user changes the value of the search term
+   * @param {Object} e - The event object for the searchTerm's input onChange
+   */
   const handleSearchTermChange = (e) => {
     // Get the user input from the event target
     const userInput = e.target.value;
@@ -40,9 +50,10 @@ const SearchBar = () => {
     dispatch(setSearchTerm(userInput));
   };
 
-  // Handle the event when the user clicks the clear button
+  /**
+   * Handle the event when the user clicks the clear button
+   */
   const handleClearSearchTermClick = () => {
-
     // Dispatch the clearSearchTerm action to clear the search term from the global state
     dispatch(clearSearchTerm());
   };
@@ -55,7 +66,7 @@ const SearchBar = () => {
               hover:border-field-hover"
     >
       <form
-        onSubmit={handleSubmit}
+        // onSubmit={handleSearchTermSubmit}
         role="search"
         className="flex items-center w-full"
       >
@@ -70,7 +81,7 @@ const SearchBar = () => {
         <input
           type="text"
           className={`w-full bg-field border-none focus:outline-none text-base 
-          text-primary ${searchTerm && "text-black"}`}
+            text-primary ${searchTerm && "text-black"}`}
           placeholder="Search Reddit"
           value={searchTerm}
           onChange={handleSearchTermChange}

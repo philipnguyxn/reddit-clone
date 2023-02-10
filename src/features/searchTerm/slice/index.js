@@ -1,10 +1,12 @@
 // Node Modules
 import { createSlice } from '@reduxjs/toolkit';
 
+const initialState = '';
+
 // searchTermSlice initialization
 export const searchTermSlice = createSlice({
   name: "searchTerm",
-  initialState: '',
+  initialState,
   reducers: {
     setSearchTerm: (state, action) => {
       return action.payload
@@ -14,6 +16,8 @@ export const searchTermSlice = createSlice({
     }
   },
 });
+
+export { initialState as searchTermSliceInitialState };
 
 // Slice's Actions
 export const { setSearchTerm, clearSearchTerm } = searchTermSlice.actions;

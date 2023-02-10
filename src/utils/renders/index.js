@@ -12,7 +12,7 @@ import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 // Import the `setupStore` function from the app's store file
-import setupStore from "../../app/store";
+import { setupStore } from "../../app/store";
 
 // Import the `Provider` component from the providers file
 import Providers from "../providers";
@@ -21,10 +21,10 @@ import Providers from "../providers";
  * Renders a React component with all Providers wrapper.
  *
  * @param {Component} ui - The React component to render
- * @param {Object} [route="/"] - The route to push to the browser history.
- * @param {Object} [preloadedState={}] - The initial state for the store
+ * @param {Object} [route] - The route to push to the browser history.
+ * @param {Object} [preloadedState] - The initial state for the store
  * @param {Object} [store] - An instance of the store to use for this component.
- * @param {Object} [renderOptions={}] - Additional options to pass to the render function.
+ * @param {Object} [renderOptions] - Additional options to pass to the render function.
  * @returns {Object} An object with a `user` property and the result of `render`.
  */
 export const renderWithAllProviders = (
@@ -52,9 +52,3 @@ export const renderWithAllProviders = (
     ...render(ui, { wrapper: Providers, ...renderOptions }),
   };
 };
-
-// Create a store instance with the specified preloaded state
-const storeInstance = setupStore(preloadedState);
-
-// Export the store instance as store
-export { storeInstance as store };

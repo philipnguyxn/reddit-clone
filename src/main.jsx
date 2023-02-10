@@ -11,7 +11,7 @@ import App from "./app/App";
 import "./index.css";
 
 // Store
-import store from "./app/store";
+import { store } from "./app/store";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
