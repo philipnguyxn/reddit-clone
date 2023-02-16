@@ -2,14 +2,14 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../tests/setup";
+import { renderWithAllProviders } from "../../utils/renders";
 
 // Components
 import Post from ".";
 
 describe("Post component rendering", () => {
   it("renders Post component", () => {
-    renderWithRouter(<Post />);
+    renderWithAllProviders(<Post />);
 
     screen.debug();
   });

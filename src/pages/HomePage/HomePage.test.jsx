@@ -2,14 +2,14 @@
 import { screen } from "@testing-library/react";
 
 // Helper functions
-import { renderWithRouter } from "../../../tests/setup";
+import { renderWithAllProviders } from "../../utils/renders";
 
 // Components
 import HomePage from ".";
 
 describe("HomePage component rendering", () => {
   it("renders HomePage component", () => {
-    renderWithRouter(<HomePage />);
+    renderWithAllProviders(<HomePage />);
 
     screen.debug();
   });
