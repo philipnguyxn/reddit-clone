@@ -1,11 +1,11 @@
 // Node Modules
-import React from "react";
+import React from 'react'
 
 // Icons
-import { ReactComponent as UserPost } from "../../assets/icons/userPost.svg";
-import { ReactComponent as Comment } from "../../assets/icons/comment.svg";
-import { ReactComponent as ArrowUpward } from "../../assets/icons/arrowUpward.svg";
-import { ReactComponent as ArrowDownward } from "../../assets/icons/arrowDownward.svg";
+import { ReactComponent as UserPost } from '../../assets/icons/userPost.svg'
+import { ReactComponent as Comment } from '../../assets/icons/comment.svg'
+import { ReactComponent as ArrowUpward } from '../../assets/icons/arrowUpward.svg'
+import { ReactComponent as ArrowDownward } from '../../assets/icons/arrowDownward.svg'
 
 const Post = () => {
   return (
@@ -50,7 +50,7 @@ const Post = () => {
         </button>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Post;
+export default Post

@@ -1,14 +1,14 @@
 // Node Modules
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 // Icons
-import { ReactComponent as User } from "../../../assets/icons/user.svg";
-import { ReactComponent as ExpandMore } from "../../../assets/icons/expandMore.svg";
-import { ReactComponent as ExpandLess } from "../../../assets/icons/expandLess.svg";
+import { ReactComponent as User } from '../../../assets/icons/user.svg'
+import { ReactComponent as ExpandMore } from '../../../assets/icons/expandMore.svg'
+import { ReactComponent as ExpandLess } from '../../../assets/icons/expandLess.svg'
 
 const UserSetting = () => {
-  const [expandIsClicked, setExpandIsClicked] = useState(false);
-  const [switchIsClicked, setSwitchIsClicked] = useState(false);
+  const [expandIsClicked, setExpandIsClicked] = useState(false)
+  const [switchIsClicked, setSwitchIsClicked] = useState(false)
 
   return (
     // Menu Bar
@@ -16,8 +16,8 @@ const UserSetting = () => {
       className={`relative w-64 flex items-center flex-grow-1 flex-row
         ${
           !expandIsClicked
-            ? "hover:border-1 hover:border-solid hover:border-primary hover:rounded"
-            : "border-x-1 border-t-1 border-b-0 border-solid border-primary rounded-t"
+            ? 'hover:border-1 hover:border-solid hover:border-primary hover:rounded'
+            : 'border-x-1 border-t-1 border-b-0 border-solid border-primary rounded-t'
         }`}
       role="menubar"
     >
@@ -36,7 +36,7 @@ const UserSetting = () => {
       </div>
       <div
         className="absolute top-12 right-[1.2px] w-full z-10 menu"
-        aria-hidden={`${!expandIsClicked ? "true" : "false"}`}
+        aria-hidden={`${!expandIsClicked ? 'true' : 'false'}`}
         role="menuitem"
       >
         {/* Menu Content */}
@@ -45,7 +45,7 @@ const UserSetting = () => {
               border-solid border-primary border-t-0 rounded-b bg-secondary
               hover:bg-primary
               ${
-                !expandIsClicked ? "invisible opacity-0" : "visible opacity-1"
+                !expandIsClicked ? 'invisible opacity-0' : 'visible opacity-1'
               }`}
         >
           <div
@@ -70,9 +70,7 @@ const UserSetting = () => {
                 <span
                   className={`absolute w-switch-knot h-switch-knot
                               rounded-xl bg-secondary duration-300 left-1 bottom-1
-                              ${
-                                switchIsClicked && "translate-x-swtich-knot"
-                              }`}
+                              ${switchIsClicked && 'translate-x-swtich-knot'}`}
                 ></span>
               </span>
             </label>
@@ -80,7 +78,7 @@ const UserSetting = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default UserSetting;
+export default UserSetting

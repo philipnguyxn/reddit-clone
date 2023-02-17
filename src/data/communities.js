@@ -1,5 +1,5 @@
 // Node Modules
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid'
 
 const communities = [
   {
@@ -37,7 +37,7 @@ const communities = [
   {
     id: uuidv4(),
     name: 'r/Science',
-  }
-];
+  },
+]
 
-export default communities;
+export default communities

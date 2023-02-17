@@ -1,16 +1,16 @@
 // Node Modules
-import { screen } from "@testing-library/react";
+import { screen } from '@testing-library/react'
 
 // Helper functions
-import { renderWithAllProviders } from "../../utils/renders";
+import { renderWithAllProviders } from '../../utils/renders'
 
 // Components
-import HomePage from ".";
+import HomePage from '.'
 
-describe("HomePage component rendering", () => {
-  it("renders HomePage component", () => {
-    renderWithAllProviders(<HomePage />);
+describe('HomePage component rendering', () => {
+  it('renders HomePage component', () => {
+    renderWithAllProviders(<HomePage />)
 
-    screen.debug();
-  });
-});
+    screen.debug()
+  })
+})

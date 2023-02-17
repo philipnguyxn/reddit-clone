@@ -1,16 +1,16 @@
 // Node Modules
-import { screen } from "@testing-library/react";
+import { screen } from '@testing-library/react'
 
 // Helper functions
-import { renderWithAllProviders } from "../../utils/renders";
+import { renderWithAllProviders } from '../../utils/renders'
 
 // Components
-import Header from ".";
+import Header from '.'
 
-describe("Header component rendering/navigating between routes", () => {
-  it("renders Header component", () => {
-    renderWithAllProviders(<Header />);
+describe('Header component rendering/navigating between routes', () => {
+  it('renders Header component', () => {
+    renderWithAllProviders(<Header />)
 
-    screen.debug();
-  });
-});
+    screen.debug()
+  })
+})

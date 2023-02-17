@@ -1,23 +1,23 @@
 // Node Modules
-import { screen } from "@testing-library/react";
+import { screen } from '@testing-library/react'
 
 // Helper functions
-import { renderWithAllProviders } from "../../utils/renders";
+import { renderWithAllProviders } from '../../utils/renders'
 
 // Components
-import CreatePost from ".";
+import CreatePost from '.'
 
-describe("CreatePost component rendering", () => {
-  it("renders CreatePost component", () => {
-    renderWithAllProviders(<CreatePost />);
+describe('CreatePost component rendering', () => {
+  it('renders CreatePost component', () => {
+    renderWithAllProviders(<CreatePost />)
 
-    screen.debug();
-  });
+    screen.debug()
+  })
 
-  it("display the section", () => {
-    renderWithAllProviders(<CreatePost />);
+  it('display the section', () => {
+    renderWithAllProviders(<CreatePost />)
 
-    expect(screen.getByRole("img", { name: /user icon/i })).toBeInTheDocument();
-    expect(screen.getByPlaceholderText(/create post/i)).toBeInTheDocument();
-  });
-});
+    expect(screen.getByRole('img', { name: /user icon/i })).toBeInTheDocument()
+    expect(screen.getByPlaceholderText(/create post/i)).toBeInTheDocument()
+  })
+})

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 // Components
-import Header from "../../layouts/Header";
+import Header from '../../layouts/Header'
 
 const CreatePost = () => {
   return (
@@ -9,7 +9,7 @@ const CreatePost = () => {
       <Header />
       <div>CreatePost</div>
     </>
-  );
-};
+  )
+}
 
-export default CreatePost;
+export default CreatePost

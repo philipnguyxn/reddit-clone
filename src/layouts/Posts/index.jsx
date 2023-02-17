@@ -1,8 +1,8 @@
 // Node Modules
-import React from "react";
+import React from 'react'
 
 // Components
-import Post from "../Post";
+import Post from '../Post'
 
 const Posts = () => {
   return (
@@ -11,7 +11,7 @@ const Posts = () => {
         <Post />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Posts;
+export default Posts

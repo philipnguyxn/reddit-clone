@@ -1,11 +1,11 @@
 // Node Modules
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = '';
+const initialState = ''
 
 // searchTermSlice initialization
 export const searchTermSlice = createSlice({
-  name: "searchTerm",
+  name: 'searchTerm',
   initialState,
   reducers: {
     setSearchTerm: (state, action) => {
@@ -13,14 +13,14 @@ export const searchTermSlice = createSlice({
     },
     clearSearchTerm: (state, action) => {
       return ''
-    }
+    },
   },
-});
+})
 
-export { initialState as searchTermSliceInitialState };
+export { initialState as searchTermSliceInitialState }
 
 // Slice's Actions
-export const { setSearchTerm, clearSearchTerm } = searchTermSlice.actions;
+export const { setSearchTerm, clearSearchTerm } = searchTermSlice.actions
 
 // Slice's Reducer
-export default searchTermSlice.reducer;
+export default searchTermSlice.reducer

@@ -1,8 +1,8 @@
 // Node Modules
-import React from "react";
+import React from 'react'
 
 // Icons
-import { ReactComponent as User } from "../../assets/icons/user.svg";
+import { ReactComponent as User } from '../../assets/icons/user.svg'
 
 const CreatePost = () => {
   return (
@@ -18,7 +18,7 @@ const CreatePost = () => {
         placeholder="Create Post"
       />
     </div>
-  );
-};
+  )
+}
 
-export default CreatePost;
+export default CreatePost

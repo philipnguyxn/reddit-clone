@@ -1,8 +1,10 @@
 // Node Modules
-import React from "react";
+import React from 'react'
 
 // Icons
-import { ReactComponent as User } from "../../assets/icons/user.svg";
+import { ReactComponent as User } from '../../assets/icons/user.svg'
+
+import { getSubreddits } from '../../services/reddit'
 
 const Community = ({ name }) => {
   return (
@@ -14,13 +16,14 @@ const Community = ({ name }) => {
         <span>
           <h4>{name}</h4>
         </span>
+        <button onClick={() => getSubreddits()}>Test</button>
       </li>
       <div
         className="w-full border-divider border-solid 
                   border-primary last:border-none mb-3"
       ></div>
     </>
-  );
-};
+  )
+}
 
-export default Community;
+export default Community

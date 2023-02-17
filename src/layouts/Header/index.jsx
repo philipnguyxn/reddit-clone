@@ -1,13 +1,13 @@
 // Node Modules
-import React from "react";
+import React from 'react'
 
 // Assets
-import { ReactComponent as Logo } from "../../assets/imgs/redditLogo.svg";
+import { ReactComponent as Logo } from '../../assets/imgs/redditLogo.svg'
 
 // Components
-import MenuBar from "../../components/ui/MenuBar";
-import SearchBar from "../../components/ui/SearchBar";
-import UserSetting from "../../components/ui/UserSetting";
+import MenuBar from '../../components/ui/MenuBar'
+import SearchBar from '../../components/ui/SearchBar'
+import UserSetting from '../../components/ui/UserSetting'
 
 const Header = () => {
   return (
@@ -23,7 +23,7 @@ const Header = () => {
       <SearchBar />
       <UserSetting />
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

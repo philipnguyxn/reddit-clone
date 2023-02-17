@@ -3,19 +3,19 @@
  */
 
 // Import the React `Component` module
-import { Component } from "react";
+import { Component } from 'react'
 
 // Import the React Testing Library's `render` function
-import { render } from "@testing-library/react";
+import { render } from '@testing-library/react'
 
 // Import the React Testing Library's `userEvent` module
-import userEvent from "@testing-library/user-event";
+import userEvent from '@testing-library/user-event'
 
 // Import the `setupStore` function from the app's store file
-import { setupStore } from "../../app/store";
+import { setupStore } from '../../app/store'
 
 // Import the `Provider` component from the providers file
-import Providers from "../providers";
+import Providers from '../providers'
 
 /**
  * Renders a React component with all Providers wrapper.
@@ -29,16 +29,16 @@ import Providers from "../providers";
  */
 export const renderWithAllProviders = (
   ui,
-  { route = "/" } = {},
+  { route = '/' } = {},
   {
     preloadedState = {},
     // Automatically create a store instance if no store was passed in
     store = setupStore(preloadedState),
     ...renderOptions
-  } = {}
+  } = {},
 ) => {
   // Push a new state to the browser history with the specified route
-  window.history.pushState({}, "Reddit Clone", route);
+  window.history.pushState({}, 'Reddit Clone', route)
 
   // Return an object with the `user` property and the result of the `render` function
   return {
@@ -50,5 +50,5 @@ export const renderWithAllProviders = (
 
     // Spread the result of the `render` function into the return object
     ...render(ui, { wrapper: Providers, ...renderOptions }),
-  };
-};
+  }
+}

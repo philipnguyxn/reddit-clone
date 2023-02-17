@@ -1,11 +1,11 @@
 // Node Modules
-import React from "react";
+import React from 'react'
 
 // Data
-import communities from "../../data/communities";
+import communities from '../../data/communities'
 
 // Components
-import Community from "../Community";
+import Community from '../Community'
 
 const Communities = () => {
   return (
@@ -22,7 +22,7 @@ const Communities = () => {
         ))}
       </ul>
     </>
-  );
-};
+  )
+}
 
-export default Communities;
+export default Communities

@@ -8,22 +8,22 @@
  */
 
 // Import screen object from react testing library for element queries
-import { screen } from "@testing-library/react";
+import { screen } from '@testing-library/react'
 
 // Import the render function that is wrapped by renderOptions and providers
-import { renderWithAllProviders } from "../../../utils/renders";
+import { renderWithAllProviders } from '../../../utils/renders'
 
 // Import the componet that is tested with
-import SearchBar from ".";
+import SearchBar from '.'
 
 // Import actions for setting and clearing the search term
 import {
   clearSearchTerm,
   setSearchTerm,
-} from "../../../features/searchTerm/slice";
+} from '../../../features/searchTerm/slice'
 
 // Import the store object for dispatching actions
-import { store } from "../../../app/store";
+import { store } from '../../../app/store'
 
 /**
  * Test suite for the SearchBar component.
@@ -31,58 +31,58 @@ import { store } from "../../../app/store";
  * The tests are focused on verifying that the component is rendering as expected,
  * and that it can perform searches and clear search terms.
  */
-describe("SearchBar component rendering/searching posts", () => {
+describe('SearchBar component rendering/searching posts', () => {
   /**
    * Test case for verifying that the SearchBar component is rendered correctly.
    */
-  it("renders SearchBar component", () => {
-    renderWithAllProviders(<SearchBar />);
+  it('renders SearchBar component', () => {
+    renderWithAllProviders(<SearchBar />)
 
-    screen.debug();
-  });
+    screen.debug()
+  })
 
   /**
    * Test case for verifying that the search bar is displayed correctly.
    */
-  it("display the search bar", () => {
-    renderWithAllProviders(<SearchBar />);
+  it('display the search bar', () => {
+    renderWithAllProviders(<SearchBar />)
 
     // Find the search bar form
-    expect(screen.getByRole("search")).toBeInTheDocument();
+    expect(screen.getByRole('search')).toBeInTheDocument()
 
     // Find the search button, input tag, and cancel button
     expect(
-      screen.getByRole("button", { name: /search icon/i })
-    ).toBeInTheDocument();
-    expect(screen.getByPlaceholderText(/search reddit/i)).toBeInTheDocument();
-    expect(screen.queryByRole("button", { name: /cancel icon/i })).toBeNull();
-  });
-});
+      screen.getByRole('button', { name: /search icon/i }),
+    ).toBeInTheDocument()
+    expect(screen.getByPlaceholderText(/search reddit/i)).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /cancel icon/i })).toBeNull()
+  })
+})
 
 /**
  * Test suite for the searchTermSlice.
  *
  * The tests are focused on verifying that the search term is correctly being set and cleared.
  */
-describe("testing searchTermSlice", () => {
+describe('testing searchTermSlice', () => {
   /**
    * Test case for verifying that the new search term is being set correctly.
    */
-  test("should set the new searchTerm based on changes in the search input", () => {
-    store.dispatch(setSearchTerm("redux"));
+  test('should set the new searchTerm based on changes in the search input', () => {
+    store.dispatch(setSearchTerm('redux'))
 
-    expect(store.getState().searchTerm).toStrictEqual("redux");
-  });
+    expect(store.getState().searchTerm).toStrictEqual('redux')
+  })
 
   /**
    * Test case for verifying that the search term can be cleared correctly.
    */
-  test("should clear the searchTerm when the clear button is clicked", async () => {
-    const { user } = renderWithAllProviders(<SearchBar />);
+  test('should clear the searchTerm when the clear button is clicked', async () => {
+    const { user } = renderWithAllProviders(<SearchBar />)
 
-    await user.click(screen.getByRole("img", { name: /cancel icon/i }));
+    await user.click(screen.getByRole('img', { name: /cancel icon/i }))
 
-    store.dispatch(clearSearchTerm());
-    expect(store.getState().searchTerm).toStrictEqual("");
-  });
-});
+    store.dispatch(clearSearchTerm())
+    expect(store.getState().searchTerm).toStrictEqual('')
+  })
+})

@@ -1,15 +1,30 @@
 {
+  "env": {
+    "es2018": true,
+    "browser": true
+  },
   "extends": [
-    "reddit-clone",
-    "plugin:prettier/recommended",
-    "plugin:testing-library/react"
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "standard",
+    "prettier",
+    "prettier/standard"
   ],
-  "plugins": ["testing-library", "jest-dom"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["react", "testing-library", "jest-dom", "prettier"],
   "rules": {
     "testing-library/await-async-query": "error",
     "testing-library/no-await-sync-query": "error",
     "testing-library/no-debugging-utils": "warn",
-    "testing-library/no-dom-import": "off"
+    "testing-library/no-dom-import": "off",
+    "indent": [2, 2],
+    "linebreak-style": ["error", "unix"]
   },
   "overrides": [
     {

@@ -1,11 +1,11 @@
 // Node Modules
-import React from "react";
+import React from 'react'
 
 // Componets
-import Header from "../../layouts/Header";
-import Posts from "../../layouts/Posts";
-import CreatePost from "../../layouts/CreatePost";
-import Communities from "../../layouts/Communitites";
+import Header from '../../layouts/Header'
+import Posts from '../../layouts/Posts'
+import CreatePost from '../../layouts/CreatePost'
+import Communities from '../../layouts/Communitites'
 
 const HomePage = () => {
   return (
@@ -23,7 +23,7 @@ const HomePage = () => {
         </div>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage

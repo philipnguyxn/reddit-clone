@@ -1,12 +1,12 @@
 /**
  * File for creating a Redux store for the application
-*/
+ */
 
 // Import the `configureStore` function from the @reduxjs/toolkit package
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
 // Import the `searchTermReducer` from the searchTermSlice's features file
-import searchTermReducer from "../features/searchTerm/slice";
+import searchTermReducer from '../features/searchTerm/slice'
 
 const rootReducer = combineReducers({
   searchTerm: searchTermReducer,
@@ -22,8 +22,8 @@ export const setupStore = (preloadedState) => {
     reducer: rootReducer,
     // Pass in the preloaded state if available
     preloadedState,
-  });
-};
+  })
+}
 
 // Create and export a store instance with the specified preloaded state
-export const store = setupStore({});
+export const store = setupStore({})
